@@ -20,7 +20,7 @@ Call the token endpoint directly with a post request on the server-side includin
 | client_secret | Yes      | Your app's client secret.                                                                                                |
 
 > [!NOTE]  
-> The scope **embed** is not automatically added to your app. You need to [contact us](/contact/README.md) so we can add the scope. The example above will not work otherwise.
+> The scope **embed** is not automatically added to your app. You need to [contact us](/contact/README.md) so we can add the scope. The example below will not work otherwise.
 
 ### Code example
 
