@@ -175,3 +175,7 @@ The only difference from the mobile button is the width.
 ```
 
 </details>
+
+<br><br>
+<a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
+<a style="text-align: left;" href="/03-embed-api/3d-preview/README.md" >3D preview</a>

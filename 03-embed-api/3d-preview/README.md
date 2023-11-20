@@ -104,3 +104,8 @@ If the response have a **iframeUrl** you can now embed it on your site using an 
 <br>
 
 </details>
+
+<br><br>
+
+<a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
+<a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
