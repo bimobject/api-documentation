@@ -1,5 +1,7 @@
 # 3d preview
 
+Empower your site with 3D BIMobject previews using our iframe solution. Please find documentation and guides to effortlessly integrate our 3D viewer iframe solution into your website or application.
+
 ## Get Iframe Url
 
 1. Call the endpoint with the GTIN of the product you want to preview.
@@ -17,6 +19,20 @@ If the **preview** element in the response is empty that means the requested pro
 
 ### Code example
 
+<details><summary>bash</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```bash
+curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/by-gtin/XXXXX
+```
+
+</details>
+
+<details><summary>JS</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
 ```javascript
 const response = await fetch(
   `https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`,
@@ -27,6 +43,8 @@ const response = await fetch(
   }
 );
 ```
+
+</details>
 
 ### Response example
 
@@ -86,3 +104,8 @@ If the response have a **iframeUrl** you can now embed it on your site using an 
 <br>
 
 </details>
+
+<br><br>
+
+<a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
+<a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
