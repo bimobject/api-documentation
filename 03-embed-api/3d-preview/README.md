@@ -78,12 +78,11 @@ If the response have a **iframeUrl** you can now embed it on your site using an 
 <img src="../../assets/img/embed-preview-example-mobile.png" alt="Example BIMobject mobile 3d preview"/>
 <br>
 
-</details
+</details>
 
 <details><summary>Desktop style guide</summary>
 
 <img src="../../assets/img/embed-preview-example-desktop.png" alt="Example BIMobject desktop 3d preview"/>
 <br>
 
-</details
-```
+</details>
