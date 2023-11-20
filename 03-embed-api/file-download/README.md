@@ -17,8 +17,21 @@ Dive into our documentation on how to integrate BIMobject file fetching and down
 
 ### Code example
 
+<details><summary>bash</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```bash
+curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/by-gtin/XXXXX
+```
+
+</details>
+
+<details><summary>JS</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
 ```javascript
-// JavaScript
 const response = await fetch(
   `https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`,
   {
@@ -28,6 +41,8 @@ const response = await fetch(
   }
 );
 ```
+
+</details>
 
 ### Response example
 
