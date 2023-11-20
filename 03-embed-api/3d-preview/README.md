@@ -86,4 +86,3 @@ If the response have a **iframeUrl** you can now embed it on your site using an 
 <br>
 
 </details
-```
