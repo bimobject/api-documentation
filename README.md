@@ -23,3 +23,7 @@ Describes how you can embed download functionality on your site to allow users t
 ## [Troubleshooting](/troubleshooting/README.md)
 
 If you run into problems this section will help you troubleshoot the errors.
+
+## [Contact](/contact/README.md)
+
+If you have any questions or need support, don't hesitate to reach out to us.

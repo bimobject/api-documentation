@@ -1,6 +1,6 @@
 # Embed API
 
-Our Embed API empowers you to integrate core functionalities like 3D previews and BIMobject downloads directly into your own website or application. This API is constantly evolving, with new features and enhancements on the horizon. Stay tuned for more updates, and feel free to reach out to us with any questions or suggestions.
+Our Embed API empowers you to integrate core functionalities like 3D previews and BIMobject downloads directly into your own website or application.
 
 ## Before using the API
 
