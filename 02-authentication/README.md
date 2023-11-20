@@ -1,0 +1,75 @@
+# Authentication
+
+This document describes how to authenticate using Client Credentials flow. Which is an OAuth 2.0 standard for server to server communication. The flow is described in detail in <a href="https://datatracker.ietf.org/doc/html/rfc6749#section-4.4" target="_blank">RFC-6749</a>.
+
+## Token Endpoint
+
+```
+https://accounts.bimobject.com/identity/connect/token
+```
+
+## Token Request
+
+Call the token endpoint directly with a post request on the server-side including the following parameters in the request body:
+
+| PARAMETER     | REQUIRED | USAGE                                                                                                                    |
+| ------------- | -------- | ------------------------------------------------------------------------------------------------------------------------ |
+| grant_type    | Yes      | Should be the same as the authentication flow you selected when creating your app (In this case **client_credentials**). |
+| scope         | Yes      | Select a scope that matches the API you want to connect to. (In this case **embed**)                               |
+| client_id     | Yes      | Your app's client id.                                                                                                    |
+| client_secret | Yes      | Your app's client secret.                                                                                                |
+
+### Example
+
+```bash
+curl -X "POST" -d grant_type=client_credentials -d scope=embed -d client_id=XXXXX -d client_secret=XXXXX https://accounts.bimobject.com/identity/connect/token
+```
+
+```javascript
+const clientCredentials = {
+  grant_type: "client_credentials",
+  client_id: { clientId },
+  client_secret: { clientSecret },
+  scope: "embed",
+};
+const authenticate = async () => {
+  const response = await fetch(
+    "https://accounts.bimobject.com/identity/connect/token",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: new URLSearchParams(clientCredentials),
+    }
+  );
+};
+```
+
+> [!NOTE]  
+> The scope **embed** is not automatically added to your app. You need to [contact us](/contact/README.md) so we can add the scope. The example above will not work otherwise.
+
+## Token Response
+
+The response will return the following parameters.
+
+| PARAMETER    | TYPE   | USAGE                                                                           |
+| ------------ | ------ | ------------------------------------------------------------------------------- |
+| access_token | string | A token which can be included in the header of requests to the BIMobject's API. |
+| token_type   | string | How the access token can be used. In this case "Bearer".                        |
+| expires_in   | int    | The time period (in seconds) for which the access token is valid.               |
+
+## Use the token
+
+With your token you can now make requests to BIMobject's API by including the token in an authorization header.
+
+`Authorization: Bearer {access_token}`
+
+### Example
+
+```bash
+curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/by-gtin/XXXXX
+```
+
+<a style="text-align: left;" href="/01-getting-started/README.md" >Previous: Getting started</a><br>
+<a style="text-align: left;" href="/03-embed-api/README.md" >Next: Embed API</a>
