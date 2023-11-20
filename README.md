@@ -12,6 +12,8 @@ Once you have created your app you can authenticate against BIMobject's APIs. Th
 
 ## [Embed API](/03-embed-api/README.md)
 
+Overview and base url to the API.
+
 ### [3D preview](/03-embed-api/3d-preview/README.md)
 
 Describes how you can embed BIMobject’s 3d preview on your site.
@@ -23,3 +25,7 @@ Describes how you can embed download functionality on your site to allow users t
 ## [Troubleshooting](/troubleshooting/README.md)
 
 If you run into problems this section will help you troubleshoot the errors.
+
+## [Contact](/contact/README.md)
+
+If you have any questions or need support, don't hesitate to reach out to us.
