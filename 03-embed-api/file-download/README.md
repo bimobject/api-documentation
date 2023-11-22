@@ -9,6 +9,9 @@ Dive into our documentation on how to integrate BIMobject file fetching and down
    1. The files will have information about the file. It will also have a download link.
    2. This link can be embedded on your site following the instructions below.
 
+> [!NOTE]  
+> The end user need to be logged in on BIMobject to be able to download, if they're not logged in they will be asked to login or sign up for a BIMobject account.
+
 ### Endpoint
 
 ```
