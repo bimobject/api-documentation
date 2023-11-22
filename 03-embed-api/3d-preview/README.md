@@ -83,11 +83,13 @@ If the response have a **iframeUrl** you can now embed it on your site using an 
 
 ### Styling
 
+Recommended styling for the 3D preview. `height` can be set to whatever suits your application.
+
 ```css
 .preview {
   border: none;
   width: 100%;
-  height: 700px;
+  min-height: 160px;
 }
 ```
 
