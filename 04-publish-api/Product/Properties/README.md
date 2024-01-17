@@ -28,7 +28,7 @@ There are several types of properties:
 
 ## Single value vs ranged
 int, number and date type properties can be set to a range or a single value. 
-If a ranged value is deseried it is enough with either a min or max value if the range should be open-ended. 7
+If a ranged value is deseried it is enough with either a min or max value if the range should be open-ended.
 
 ## Units
 Some number type properties have units. If a property has units this will be visible in the detailed response of the property collections below. 
