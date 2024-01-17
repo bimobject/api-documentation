@@ -78,7 +78,7 @@ curl -H "Authorization: Bearer XXXXX" -H "Accept-Language: de" https://embed-api
 ```javascript
 const response = await fetch(`https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`, {
   headers: {
-    Authorization: `Bearer ${clientCredentialsToken}`,
+    'Authorization': `Bearer ${clientCredentialsToken}`,
     'Accept-Language': 'de',
   },
 });

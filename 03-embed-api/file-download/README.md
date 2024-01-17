@@ -20,7 +20,7 @@ Dive into our documentation on how to integrate BIMobject file fetching and down
 
 #### Optional headers
 
-Request header `Accept-Language` can be included. This will result in the contents of the 3D preview being translated to the desired locale (if supported and available)
+Request header `Accept-Language` can be included. This will result in the contents of the download page being translated to the desired locale (if supported and available)
 
 ```http
 Accept-Language: de
@@ -78,7 +78,7 @@ curl -H "Authorization: Bearer XXXXX" -H "Accept-Language: de" https://embed-api
 ```javascript
 const response = await fetch(`https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`, {
   headers: {
-    Authorization: `Bearer ${clientCredentialsToken}`,
+    'Authorization': `Bearer ${clientCredentialsToken}`,
     'Accept-Language': 'de',
   },
 });
