@@ -17,14 +17,56 @@ If the **preview** element in the response is empty that means the requested pro
 /v1/products/by-gtin/{gtin}
 ```
 
+#### Optional headers
+
+Request header `Accept-Language` can be included. This will result in the contents of the 3D preview being translated to the desired locale (if supported and available)
+
+```http
+Accept-Language: de
+```
+
+If none is included, user's browser preferred language settings will be used.
+
+<details><summary>Supported locales:</summary>
+
+```
+cs
+da
+de
+en
+es
+fi
+fr
+hu
+it
+ja
+ko
+nl
+no
+pl
+pt-br
+pt
+sq
+sv
+th
+tr
+uk
+zh
+
+NOTE: Whilst supported, availability is not yet complete. English fallbacks will be used if a translation is not found.
+```
+
+</details>
+
 ### Code example
 
 <details><summary>bash</summary>
 
 - Include the token in an authorization header. `Authorization: Bearer {access_token}`
+- Include desired locale in Accept-Language header.
 
 ```bash
-curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/by-gtin/XXXXX
+curl -H "Authorization: Bearer XXXXX" -H "Accept-Language: de" https://embed-api.bimobject.com/v1/products/by-gtin/XXXXX
 ```
 
 </details>
@@ -34,14 +76,12 @@ curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/product
 - Include the token in an authorization header. `Authorization: Bearer {access_token}`
 
 ```javascript
-const response = await fetch(
-  `https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`,
-  {
-    headers: {
-      Authorization: `Bearer ${clientCredentialsToken}`,
-    },
-  }
-);
+const response = await fetch(`https://embed-api.bimobject.com/v1/products/by-gtin/${gtin}`, {
+  headers: {
+    Authorization: `Bearer ${clientCredentialsToken}`,
+    'Accept-Language': 'de',
+  },
+});
 ```
 
 </details>
@@ -51,7 +91,7 @@ const response = await fetch(
 ```json
 {
   "preview": {
-    "iframeUrl": "https://embed.bimobject.com/preview/{productId}?clientId={clientId}",
+    "iframeUrl": "https://embed.bimobject.com/preview/{productId}?clientId={clientId}&locales={locales}",
     "expirationDate": "2023-11-24T10:03:01.8878558+00:00"
   },
   "files": [
@@ -65,7 +105,7 @@ const response = await fetch(
       "description": "",
       "languageCode": "sv",
       "downloadLink": {
-        "url": "https://embed.bimobject.com/download/{productId}/{fileId}?clientId={clientId}",
+        "url": "https://embed.bimobject.com/download/{productId}/{fileId}?clientId={clientId}&locales={locales}",
         "expirationDate": "2023-11-24T10:03:01.9188341+00:00"
       }
     }
