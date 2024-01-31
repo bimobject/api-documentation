@@ -22,7 +22,7 @@ Describes how you can embed BIMobject’s 3d preview on your site.
 
 Describes how you can embed download functionality on your site to allow users to directly download files from BIMobject.
 
-### [Publish api](/04-publish-api/README.md)
+## [Publish api](/04-publish-api/README.md)
 This describes how you work with the publish backend to manage your brands, products etc.
 
 ## [Troubleshooting](/troubleshooting/README.md)
