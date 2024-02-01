@@ -12,7 +12,7 @@ Please honour the **expirationDate** in the response. Do not use the url after i
 If the **preview** element in the response is empty that means the requested product does not have any 3d preview.
 
 > [!TIP]
-> You can use <a style="text-align: left;" href="/03-embed-api/README.md#get-all-products-with-gtin" >Get All Products With GTIN</a> endpoint to find available GTINs
+> You can use <a style="text-align: left;" href="README.md#get-all-products-with-gtin" >Get All Products With GTIN</a> endpoint to find available GTINs
 
 ### Endpoint
 
@@ -191,8 +191,7 @@ This endpoint is meant to assist administrators and developers to find products 
             "gtin": [
                 "10021345678902"
             ]
-        },
-        ...
+        }
     ]
 }
 ```
