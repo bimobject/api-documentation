@@ -11,6 +11,9 @@ Please honour the **expirationDate** in the response. Do not use the url after i
 
 If the **preview** element in the response is empty that means the requested product does not have any 3d preview.
 
+> [!TIP]
+> You can use <a style="text-align: left;" href="/03-embed-api/README.md#get-all-products-with-gtin" >Get All Products With GTIN</a> endpoint to find available GTINs
+
 ### Endpoint
 
 ```
@@ -151,3 +154,45 @@ Recommended styling for the 3D preview. `height` can be set to whatever suits yo
 
 <a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
 <a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
+
+## Get All Products With GTIN
+
+Embed API also offers an endpoint that retrieves all products that have a known GTIN. 
+
+This endpoint is meant to assist administrators and developers to find products where the Manufacturer has specified a GTIN. It is not recommended to use this endpoint for any automatic mapping because the names can be changed at any time. 
+
+> [!NOTE]
+> The product list is cached and changes can take up to 24 hours to show up.
+
+> [!NOTE]
+> The endpoint will only return public products. Archived products will not be included in the results.
+
+### Endpoint
+
+```
+/v1/products/with-gtin
+```
+
+### Response example
+
+```json
+{
+    "products": [
+        {
+            "brandName": "BIMobject (Demo)",
+            "productEnglishName": "Blue Car",
+            "gtin": [
+                "10012345678902"
+            ]
+        },
+        {
+            "brandName": "BIMobject (Demo)",
+            "productEnglishName": "Red Car",
+            "gtin": [
+                "10021345678902"
+            ]
+        },
+        ...
+    ]
+}
+```
