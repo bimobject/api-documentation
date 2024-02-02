@@ -150,11 +150,6 @@ Recommended styling for the 3D preview. `height` can be set to whatever suits yo
 
 </details>
 
-<br><br>
-
-<a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
-<a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
-
 ## Get All Products With GTIN
 
 Embed API also offers an endpoint that retrieves all products that have a known GTIN. 
@@ -195,3 +190,8 @@ This endpoint is meant to assist administrators and developers to find products 
     ]
 }
 ```
+
+<br><br>
+
+<a style="text-align: left;" href="/03-embed-api/README.md" >Embed API</a><br>
+<a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
