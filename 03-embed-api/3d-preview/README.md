@@ -162,7 +162,7 @@ Embed API also offers an endpoint that retrieves all products that have a known 
 This endpoint is meant to assist administrators and developers to find products where the Manufacturer has specified a GTIN. It is not recommended to use this endpoint for any automatic mapping because the names can be changed at any time. 
 
 > [!NOTE]
-> The product list is cached and changes can take up to 24 hours to show up.
+> The product list is cached by the API, so it can take some time before changes show up.
 
 > [!NOTE]
 > The endpoint will only return public products. Archived products will not be included in the results.
