@@ -168,6 +168,32 @@ This endpoint is meant to assist administrators and developers to find products 
 /v1/products/with-gtin
 ```
 
+### Code example
+
+<details><summary>bash</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```bash
+curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/with-gtin
+```
+
+</details>
+
+<details><summary>JS</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```javascript
+const response = await fetch(`https://embed-api.bimobject.com/v1/products/with-gtin`, {
+  headers: {
+    'Authorization': `Bearer ${clientCredentialsToken}`
+  },
+});
+```
+
+</details>
+
 ### Response example
 
 ```json
@@ -177,14 +203,14 @@ This endpoint is meant to assist administrators and developers to find products 
             "brandName": "BIMobject (Demo)",
             "productEnglishName": "Blue Car",
             "gtin": [
-                "10012345678902"
+                "19520000000001"
             ]
         },
         {
             "brandName": "BIMobject (Demo)",
             "productEnglishName": "Red Car",
             "gtin": [
-                "10021345678902"
+                "19520000000018"
             ]
         }
     ]
