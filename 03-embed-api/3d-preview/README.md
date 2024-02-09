@@ -11,6 +11,9 @@ Please honour the **expirationDate** in the response. Do not use the url after i
 
 If the **preview** element in the response is empty that means the requested product does not have any 3d preview.
 
+> [!TIP]
+> You can use <a style="text-align: left;" href="README.md#get-all-products-with-gtin" >Get All Products With GTIN</a> endpoint to find available GTINs
+
 ### Endpoint
 
 ```
@@ -146,6 +149,73 @@ Recommended styling for the 3D preview. `height` can be set to whatever suits yo
 <br>
 
 </details>
+
+## Get All Products With GTIN
+
+Embed API also offers an endpoint that retrieves all products that have a known GTIN. 
+
+This endpoint is meant to assist administrators and developers to find products where the Manufacturer has specified a GTIN. It is not recommended to use this endpoint for any automatic mapping because the names can be changed at any time. 
+
+> [!NOTE]
+> The product list is cached by the API, so it can take some time before changes show up.
+
+> [!NOTE]
+> The endpoint will only return public products. Archived products will not be included in the results.
+
+### Endpoint
+
+```
+/v1/products/with-gtin
+```
+
+### Code example
+
+<details><summary>bash</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```bash
+curl -H "Authorization: Bearer XXXXX" https://embed-api.bimobject.com/v1/products/with-gtin
+```
+
+</details>
+
+<details><summary>JS</summary>
+
+- Include the token in an authorization header. `Authorization: Bearer {access_token}`
+
+```javascript
+const response = await fetch(`https://embed-api.bimobject.com/v1/products/with-gtin`, {
+  headers: {
+    'Authorization': `Bearer ${clientCredentialsToken}`
+  },
+});
+```
+
+</details>
+
+### Response example
+
+```json
+{
+    "products": [
+        {
+            "brandName": "BIMobject (Demo)",
+            "productEnglishName": "Blue Car",
+            "gtin": [
+                "19520000000001"
+            ]
+        },
+        {
+            "brandName": "BIMobject (Demo)",
+            "productEnglishName": "Red Car",
+            "gtin": [
+                "19520000000018"
+            ]
+        }
+    ]
+}
+```
 
 <br><br>
 
