@@ -45,7 +45,7 @@ Setting property values are done in three steps:
 To retrieve the available property collections for a given product the following query is used:
 
 ```
-/v2/brands/{brandId}/products/{productId}/propertycollections
+GET /v2/brands/{brandId}/products/{productId}/propertycollections
 ```
 
 An example response can be seen below.
@@ -71,7 +71,7 @@ An example response can be seen below.
 To retrieve the details for a property collection the following query is used:
 
 ```
-/v2/propertycollections/{propertycollectionId}
+GET /v2/propertycollections/{propertycollectionId}
 ```
 
 An example response from this endpoint can be seen below.
@@ -152,7 +152,7 @@ An example response from this endpoint can be seen below.
 Once the properties that needs to be updated are identified the update is made on the following endpoint:
 
 ```url
-/v2/brands/{brandId}/products/{productId}/propertyvalues
+PUT /v2/brands/{brandId}/products/{productId}/propertyvalues
 ```
 
 The request body should contain an array of objects containing the the property id and value:
