@@ -4,7 +4,7 @@ Dive into our documentation on how to integrate BIMobject file fetching and down
 
 ## Get Download Urls
 
-1. Call the endpoint with the GTIN of the product you want the files from.
+1. Call the endpoint with the GTIN or the BIMobject's Product ID (Guid) of the product you want the files from.
 2. The response will contain a list of files for the requested product.
    1. The files will have information about the file. It will also have a download link.
    2. This link can be embedded on your site following the instructions below.
@@ -12,10 +12,11 @@ Dive into our documentation on how to integrate BIMobject file fetching and down
 > [!NOTE]  
 > The end user need to be logged in on BIMobject to be able to download, if they're not logged in they will be asked to login or sign up for a BIMobject account.
 
-### Endpoint
+### Endpoints
 
 ```
 /v1/products/by-gtin/{gtin}
+/v1/products/{productId}
 ```
 
 #### Optional headers
