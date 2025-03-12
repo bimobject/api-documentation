@@ -4,7 +4,7 @@ Empower your site with 3D BIMobject previews using our iframe solution. Please f
 
 ## Get Iframe Url
 
-1. Call the endpoint with the GTIN of the product you want to preview.
+1. Call the endpoint with the GTIN or the BIMobject's Product ID (Guid) of the product you want to preview.
 2. The response will contain the **iframeUrl** of the product and the **expirationDate**.
 
 Please honour the **expirationDate** in the response. Do not use the url after its expiration to avoid having broken links on you site.
@@ -14,10 +14,11 @@ If the **preview** element in the response is empty that means the requested pro
 > [!TIP]
 > You can use <a style="text-align: left;" href="README.md#get-all-products-with-gtin" >Get All Products With GTIN</a> endpoint to find available GTINs
 
-### Endpoint
+### Endpoints
 
 ```
 /v1/products/by-gtin/{gtin}
+/v1/products/{productId}
 ```
 
 #### Optional headers
