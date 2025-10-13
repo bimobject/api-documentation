@@ -1,9 +1,18 @@
 # Publish API
-Our Publish API lets you manage things relating to your brand and its products
+Our Publish API lets you manage things relating to your brand and its products.
+
+## Authentication
+The client created on <a href="https://developer.bimobject.com" target="_blank">developer.bimobject.com</a> needs to have the **ClientCredentialsForAdmin** as your type of authentication, otherwise your client will not have access to the requered scopes. 
+
+> [!NOTE]
+> The that **ClientCredentialsForAdmin** is just a display name. When doing the call to the token endpoint the grant type should be the standard `client_credentials`
+
+## Scopes
+The following scopes can be used when connecting to Pubilsh API: `admin` `admin.brand` `admin.product` `admin.product.write`
 
 ## Full Api documentation
-The full api documentation can be found here:
-https://developer.bimobject.com/app/docs#abc8286c5eb9a1770bcfa4f2b17f92b147eb594af8744f7cdc78e833f13de9e2765
+The full swagger documentation can be found here:
+https://publish-publicapi.bimobject.com/swagger/index.html
 
 ## Entities
 - Brands

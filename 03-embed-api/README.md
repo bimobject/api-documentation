@@ -9,6 +9,9 @@ These steps need to be fulfilled before you are able to start using the API.
 1. Register and create an app ([Getting started](/01-getting-started/README.md))
 2. Know how to retrieve access tokens ([Authentication](/02-authentication/README.md))
 
+> [!NOTE]  
+> If you want to use the [3d Preview](/03-3d-preview/README.md) or [File download](/04-file-download/README.md) you must select **Client Credentials** as your authentication flow when creating you app.
+
 ## API Documentation
 
 The API documentation is available on <a href="https://embed-api.bimobject.com/swagger/index.html" target="_blank">Swagger</a>.
