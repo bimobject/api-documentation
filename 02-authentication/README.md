@@ -5,7 +5,7 @@ This document describes how to authenticate using Client Credentials flow. Which
 ## Token Endpoint
 
 ```
-https://accounts.bimobject.com/identity/connect/token
+https://auth.bim.com/connect/token
 ```
 
 ## Token Request
@@ -27,7 +27,7 @@ Call the token endpoint directly with a post request on the server-side includin
 <details><summary>bash</summary>
 
 ```bash
-curl -X "POST" -d grant_type=client_credentials -d scope=embed -d client_id=XXXXX -d client_secret=XXXXX https://accounts.bimobject.com/identity/connect/token
+curl -X "POST" -d grant_type=client_credentials -d scope=embed -d client_id=XXXXX -d client_secret=XXXXX https://auth.bim.com/connect/token
 ```
 
 </details>
@@ -46,7 +46,7 @@ const clientCredentials = {
 };
 const authenticate = async () => {
   const response = await fetch(
-    "https://accounts.bimobject.com/identity/connect/token",
+    "https://auth.bim.com/connect/token",
     {
       method: "POST",
       headers: {
