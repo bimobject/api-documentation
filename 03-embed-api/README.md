@@ -10,7 +10,7 @@ These steps need to be fulfilled before you are able to start using the API.
 2. Know how to retrieve access tokens ([Authentication](/02-authentication/README.md))
 
 > [!NOTE]  
-> If you want to use the [3d Preview](/03-3d-preview/README.md) or [File download](/04-file-download/README.md) you must select **Client Credentials** as your authentication flow when creating you app.
+> If you want to use the [3D Preview](/03-embed-api/3d-preview/README.md) or [File download](/03-embed-api/file-download/README.md) you must select **Client Credentials** as your authentication flow when creating you app.
 
 ## API Documentation
 
@@ -24,6 +24,6 @@ https://embed-api.bimobject.com
 
 ## Features
 
-- <a style="text-align: left;" href="/03-embed-api/3d-preview/README.md" >3d Preview</a>
+- <a style="text-align: left;" href="/03-embed-api/3d-preview/README.md" >3D Preview</a>
 - <a style="text-align: left;" href="/03-embed-api/file-download/README.md" >File download</a>
 - [Sample Demo App](https://github.com/bimobject/embed-api-demo-app__nextjs)
