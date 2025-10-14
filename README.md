@@ -1,7 +1,5 @@
 # Documentation overview
 
-Our Embed API empowers you to integrate core functionalities like 3D previews and BIMobject downloads directly into your own website or application. This API is constantly evolving, with new features and enhancements on the horizon. Stay tuned for more updates, and feel free to reach out to us with any questions or suggestions.
-
 ## [Getting started](/01-getting-started/README.md)
 
 To start using BIMobject's APIs you first need to register as a developer on our developer site and create an app. The getting started section details the steps you need to follow.
@@ -12,7 +10,7 @@ Once you have created your app you can authenticate against BIMobject's APIs. Th
 
 ## [Embed API](/03-embed-api/README.md)
 
-Overview and base url to the API.
+Our Embed API empowers you to integrate core functionalities like 3D previews and BIMobject downloads directly into your own website or application.
 
 ### [3D preview](/03-embed-api/3d-preview/README.md)
 
