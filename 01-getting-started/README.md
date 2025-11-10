@@ -3,8 +3,8 @@
 ## Becoming a verified developer
 
 1. Go to <a href="https://developer.bimobject.com" target="_blank">developer.bimobject.com</a> and register as a developer.
-2. Approval process (This step can take some time so please also contact us at [embed@bimobject.com](mailto:embed@bimobject.com) to speed up the process)
-3. You will informed when your account has been approved.
+2. Approval process.
+3. You will be informed when access has been granted.
 
 ## Creating an app
 
