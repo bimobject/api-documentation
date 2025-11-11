@@ -14,7 +14,7 @@ When you have become a verified developer you are now able to create your first 
 2. Click on the **Create app** button.
 3. Fill in all fields in the Create app form.
 4. Click **Create**.
-5. Contact us at [embed@bimobject.com](mailto:embed@bimobject.com) so we can add the correct scope and brand to your app.
+5. Reach out to your technical point of contact so that we can add the correct scope and brand to your app.
 
 > [!NOTE]  
 > The **Client Credentials** flow does not use the redirect uri, but for different reasons the field is still required. So please enter your application or company website.
