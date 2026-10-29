@@ -105,7 +105,7 @@ Links are relative to the API's base URL. Resolve them against the host you call
 Each page links to the next and previous one in `links.next` and `links.previous`. A link is `null` when there is no page that way. To page, follow the link: it repeats your query and adds a `cursor` that tells the API where to continue.
 
 - **The cursor is opaque.** Send it exactly as it appears in the link. An edited or made-up cursor is a `400`.
-- **Keep the query as it is.** A cursor belongs to one search: the same filters, the same sort and the same `Accept-Language`. Change any of them and you start a new search from its first page instead; sending the changed query with the old cursor is a `400`.
+- **Keep the query as it is.** A cursor belongs to one search: the same filters, the same sort and the same preferred language (the first choice in your `Accept-Language`). Change any of them and you start a new search from its first page instead; sending the changed query with the old cursor is a `400`.
 - **Page size is fixed on the first page.** Later pages keep it, so `pageSize` beside a `cursor` is a `400`.
 - **Pages are stable.** A page continues from the last product of the one before it, not from a position, so a product published or removed while you page neither repeats nor goes missing.
 
