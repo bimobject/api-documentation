@@ -3,7 +3,7 @@
 Version 2 of the Search API finds products, reads product details and hands out file download links, like version 1, with a cleaner contract: every id is a GUID, every response links to what you can do next, and a download gives you a link instead of the file.
 
 > [!IMPORTANT]
-> v2 is a preview. Its endpoints work in every environment, production included, but their responses may still change before v2 is released. In the API reference every v2 operation is marked **experimental** for that reason. When you build against the preview, expect to adjust your integration once v2 is final, and tell us what you find.
+> v2 is a preview. Its endpoints work in production, but their responses may still change before v2 is released, and its reference is not published on the production host while that is so. When you build against the preview, expect to adjust your integration once v2 is final, and tell us what you find.
 
 ## Authentication
 
@@ -11,10 +11,8 @@ The same as for [version 1](/05-search-api/README.md#authentication): a client f
 
 ## API reference
 
-The API serves its own reference, with a separate document for each version:
-
 - v1: https://api.bimobject.com/search/swagger
-- v2 (preview): https://api.bimobject.com/search/scalar
+- v2 (preview): not published on the production host while v2 is a preview. Ask us for the current OpenAPI document; every v2 operation in it is marked **experimental**.
 
 ## What is different from v1
 
