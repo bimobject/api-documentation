@@ -11,3 +11,6 @@ The client created on <a href="https://developer.bimobject.com" target="_blank">
 
 ## Swagger
 https://api.bimobject.com/search/swagger
+
+## [Version 2 (preview)](/05-search-api/v2-preview/README.md)
+The next version of the Search API is available as a preview: GUID ids throughout, paging by links, and a download link instead of the file. Read how it differs from v1 and how to try it.
